@@ -1,13 +1,19 @@
 pipeline{
     stages{
         stage('Build') {
-                    sh 'mvn clean build -Dmaven.test.skip=true'
+               step{
+                        sh 'mvn clean build -Dmaven.test.skip=true'
+                    }
                 }
         stage('Test'){
-            sh mvn clean test
+            step{
+                sh mvn clean test
+            }
         }
         stage('Deploy'){
-            sh mvn clean deploy
+            step{
+                sh mvn clean deploy
+            }
         }
     }
 }
