@@ -1,11 +1,13 @@
+package io.jenkinsdemo.app;
+
 /**
  * Created by prasantabiswas on 17/11/17.
  */
-public class Demo {
+public class Calculator {
     private int v1;
     private int v2;
 
-    Demo(int v1, int v2)
+    public Calculator(int v1, int v2)
     {
         this.v1 = v1;
         this.v2 = v2;
