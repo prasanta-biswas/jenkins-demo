@@ -1,3 +1,5 @@
+package io.jenkinsdemo.app;
+
 import io.jenkinsdemo.app.Calculator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -5,7 +7,7 @@ import org.testng.annotations.Test;
 /**
  * Created by prasantabiswas on 17/11/17.
  */
-public class DemoTest {
+public class CalculatorTest {
 
     @Test
     public void testAddition()
